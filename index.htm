@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!-- Build with:
+node_modules/.bin/lsc -c -m embedded -w eyesnapper.ls
+-->
+<script src="jquery-2.1.4.min.js"></script>
+<script src="coffeekup.js"></script>
+<script src="eyesnapper.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<!--
+<script src="canvas-animation.js"></script>
+<canvas id="c"></canvas>
+-->
+
+<style>
+  html,body {
+   height: 100%;
+   color: #fff;
+   font-family: 'Droid Sans', sans-serif;
+   font-size: 32pt;
+   text-shadow: #000 0.05em 0.05em 0.3em;
+  }
+  html {
+   background-image: url(background.jpg);
+   background-size: cover;
+   background-position: center;
+   background-opacity: 80%;
+  }
+  h2 {
+   text-align: center;
+  }
+  form {
+   width: 15em;
+   margin: 0 auto;
+  }
+  input[type="text"] {
+   display: block;
+   width: 100%;
+   text-align: center;
+   font-size: 32pt;
+  }
+  .begin {
+   display: block;
+   width: 100%;
+   font-size: 32pt;
+   text-weight: bold;
+  }
+  .eyesnapper-text-label {
+   font-size: 55pt;
+   font-weight: bold;
+  }
+  .control-button {
+   background: rgba(255,255,255,0.3);
+   color: #fff;
+   width: 3em;
+   height: 1.5em;
+   border: none;
+   font-size: 16pt;
+  }
+  .control-button.active {
+   background: rgba(255,255,255,0.5);
+   border-top: solid 4px #fff;
+  }
+</style>
