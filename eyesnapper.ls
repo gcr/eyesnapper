@@ -60,6 +60,10 @@ export show-controls = (bpm, set-bpm, end) ->
     ..append gen-button 50
     ..append gen-button 55
     ..append gen-button 60
+    ..append gen-button 65
+    ..append gen-button 70
+    ..append gen-button 75
+    ..append gen-button 80
     ..append-to document.body
     ..css do
       position: \fixed
