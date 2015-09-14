@@ -49,10 +49,6 @@ export show-controls = (bpm, set-bpm, end) ->
       ..click -> set-bpm b; refresh-controls @
   container = $ "<div>"
     ..append end-button
-    ..append gen-button 10
-    ..append gen-button 15
-    ..append gen-button 20
-    ..append gen-button 25
     ..append gen-button 30
     ..append gen-button 35
     ..append gen-button 40
@@ -64,6 +60,8 @@ export show-controls = (bpm, set-bpm, end) ->
     ..append gen-button 70
     ..append gen-button 75
     ..append gen-button 80
+    ..append gen-button 85
+    ..append gen-button 90
     ..append-to document.body
     ..css do
       position: \fixed
